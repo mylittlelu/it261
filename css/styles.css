@@ -1,0 +1,104 @@
+/* styles for portal page */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lavenderblush;
+}
+
+nav {
+    height:60px;
+    background: lightseagreen;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+nav li {
+    float:left;
+    width: 16.66%;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+}
+
+main {
+    width: 62%;
+    float: left;
+    margin-left:10px;
+}
+
+aside {
+    width:35%;
+    float:right;
+    padding-left:20px;
+
+}
+
+.right {
+    float:right;
+    margin-left:30px;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin:20px auto;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    background: lightgray;
+    clear:both;
+    font-size: 80%;
+}
+footer ul {
+    display:flex;
+    justify-content: center;
+}
+
+footer li {
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* -- typography --*/
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0;
+}
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size:2em;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+main h2 {
+    text-align:left;
+}
+
+main h2, aside h2 {
+    text-align:left;
+}
+
+p {
+    margin-bottom: 10px;
+}
+

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Page</title>
-    <link href="css/styles.css" type="text/css" rel="stylesheet"
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <h1> <a href=index.php">AVANV's Portal Page</a> </h1>
@@ -24,22 +24,18 @@
 </nav>
 
 <main>
+
 <h2> About me...</h2>
 <img class="right" src="images/hobiecrop.jpg" alt="pic of anne">
-<p>Hey! My name's Anne. I live with my two Jack Russels and work at UW in IT. I love to travel. But after work there's mostly just time for some hiking with the dogs or working on projects around the house.</P>
-<p>I'm learning PHP to be competitive in my field.</p>
-</br>
-</br>
-</br>
-<h3>Here is my MAMP screenshot: </break>
+<p>Hey! My name's Anne. I live with my two Jack Russels and work at UW in Information Technology I love to travel. But after work there's mostly just time for a little hiking with the dogs or working on projects around the house.</P>
+<p>I'm learning PHP to be more competitive in my field.</p>
 
-<img src="images/mamp.png" alt="mamp screenshot">
-</h3>
-</br>
-</br>
-</br>
-<h3>...here is my array screenshot (I used the code provided but it does not produce an error -??):</h3></br>
-<img src="images/arrayscreenshot.PNG" alt="test_mamp">
+<h3>Here is my MAMP screenshot: </h3>
+<p><img class="resize" src="images/mamp.png" alt="mamp screenshot"> </p>
+
+
+<h3>...here is my array screenshot (I used the code provided but it does not produce an error -??):</h3>
+<p><img src="images/arrayscreenshot.PNG" alt="test_mamp"><p>
 
 
 </main>

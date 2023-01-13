@@ -42,6 +42,16 @@
 
 
 <aside>
+<h2>Main Assignments</h2>
+
+<ul>
+    <li><a href="">Using a Switch, HW3</a></li>
+    <li><a href="">Troublshoot</a></li>
+    <li><a href="">Travel Calculator</a></li>
+    <li><a href="">Email</a></li>
+    <li><a href="">Gallery</a></li>
+    <li><a href="">Database</a></li>
+</ul>
 <h2>Weekly Class Exercises</h2>
 <h3>Week 2</h3>
 <ol>
@@ -49,6 +59,7 @@
     <li><a href="var.php">var2.php</a></li>
     <li><a href="var.php">var3.php</a></li>
     <li><a href="var.php">var4.php</a></li>
+</ol>
 </aside>
 
 

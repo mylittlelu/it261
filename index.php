@@ -27,16 +27,14 @@
 
 <h2> About me...</h2>
 <img class="right" src="images/hobiecrop.jpg" alt="pic of anne">
-<p>Hey! My name's Anne. I live with my two Jack Russels and work at UW in Information Technology I love to travel. But after work there's mostly just time for a little hiking with the dogs or working on projects around the house.</P>
-<p>I'm learning PHP to be more competitive in my field.</p>
+<p>Hey! My name's Anne. I live with my two Jack Russels and work at UW in Information Technology I love to travel. But after work there's mostly just time for a little hiking with the dogs or working on house projects. I'm learning PHP to be more competitive in my field.</p>
 
-<h3>Here is my MAMP screenshot: </h3>
+<h3>MAMP screenshot: </h3>
 <p><img class="resize" src="images/mamp.png" alt="mamp screenshot"> </p>
 
 
-<h3>...here is my array screenshot (I used the code provided but it does not produce an error -??):</h3>
-<p><img src="images/arrayscreenshot.PNG" alt="test_mamp"><p>
-
+<h3>Array Screenshot:</h3>
+<p><img class="resize" src="images/arrayscreenshot.PNG" alt="test_mamp"><p>
 
 </main>
 
@@ -54,12 +52,21 @@
 </ul>
 <h2>Weekly Class Exercises</h2>
 <h3>Week 2</h3>
-<ol>
-    <li><a href="var.php">var.php</a></li>
-    <li><a href="var.php">var2.php</a></li>
-    <li><a href="var.php">var3.php</a></li>
-    <li><a href="var.php">var4.php</a></li>
-</ol>
+<ul>
+    <li><a href="weeks/week2/var.php">var.php</a></li>
+    <li><a href="weeks/week2/var2.php">var2.php</a></li>
+    <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
+    <li><a href="weeks/week2/currency.php">currency.php</a></li>
+    <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
+</ul>
+<h3>Week 3</h3>
+<ul>
+    <li><a href="weeks/week3/if.php">1</a></li>
+    <li><a href="weeks/week3/var2.php">2</a></li>
+    <li><a href="weeks/week3/currency-logic.php">3</a></li>
+    <li><a href="weeks/week3/currency.php">4</a></li>
+    <li><a href="weeks/week3/heredoc.php">5</a></li>
+</ul>
 </aside>
 
 

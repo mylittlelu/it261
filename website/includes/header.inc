@@ -36,13 +36,22 @@ switch(THIS_PAGE) {
 }
 //  navigation array
 $nav = array(
-    'gallery.php' => 'Gallery',
-        'contact.php' => 'Contact',
-            'project.php' => 'Project',
-                'daily.php' => 'Daily',
-                    'about.php' => 'About',
-                        'index.php' => 'Home'
+ 'index.php' => 'Home',
+ 'about.php' => 'About',
+ 'daily.php' => 'Daily',
+ 'project.php' => 'Project',
+ 'contact.php' => 'Contact',
+ 'gallery.php' => 'Gallery'
   );
+
+// $nav = array(
+//    'gallery.php' => 'Gallery',
+//        'contact.php' => 'Contact',
+//            'project.php' => 'Project',
+//                'daily.php' => 'Daily',
+//                    'about.php' => 'About',
+//                        'index.php' => 'Home'
+// ); 
 
 ?>
 
@@ -61,7 +70,7 @@ $nav = array(
 <header>
 <div class="inner-header">
 <a href="index.php">
-<img style="max-width:100px; height:auto; margin-left:25%" id="logo" src="./images/phpelephant.png" alt="logo">
+<img style="max-width:100px; height:auto;" id="logo" src="./images/phpelephant.png" alt="logo">
 </a>
 
 <!-- <nav>

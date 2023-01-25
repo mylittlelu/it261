@@ -15,17 +15,32 @@ nav {
     height:60px;
     background: #333;
     line-height: 60px;
-    margin-left:25%;
     margin-bottom: 20px;
-    width:50%;
+    width:100%;
+
     
 }
 
-nav li {
-    float:right;
+nav ul {
+	clear:left;
+	float:right;
+	width:60%;
+	position:relative;
+	text-align:center;
+	display:flex;
+	right:50%;
+		
+}
+
+nav ul li {
+    display:block;
+    float:left;
+	position:relative;
+	margin:0;
     width: 16.66%;
     text-align: center;
     list-style-type: none;
+	left:50%;
 }
 
 nav a {

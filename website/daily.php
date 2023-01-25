@@ -106,7 +106,7 @@ $color = ($today == "Saturday" || $today == "Sunday") ? 'lightblue' : 'white';
 <style>
     main img {
         max-width: 90%;
-        Max-height: auto;
+        height:auto;
     }
 
      aside  ul li {

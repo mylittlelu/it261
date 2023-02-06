@@ -14,10 +14,10 @@
 
 <nav>
 <ul>
-  <li><a href=" ">Switch </a></li>
+  <li><a href="weeks/week3/switch.php">Switch </a></li>
   <li><a href=" ">Troubleshoot </a></li>
-  <li><a href=" ">Calculator </a></li>
-  <li><a href=" ">Email </a></li>
+  <li><a href="website/calculator.php">Calculator </a></li>
+  <li><a href="">Email </a></li>
   <li><a href=" ">Database</a></li>
   <li><a href=" ">Gallery </a></li>
 </ul>
@@ -61,7 +61,7 @@
 </ul>
 <h3>Week 3</h3>
 <ul>
-	<li><a href="weeks/week3/navigation.php">nav arrays (navigation tricks)</a></li>
+	<li><a href="weeks/week3/index.php">nav arrays (navigation tricks)</a></li>
     <li><a href="weeks/week3/if.php">if (if, elseif)</a></li>
     <li><a href="weeks/week3/for-loop.php">for-loop (conversion tables)</a></li>
     <li><a href="weeks/week3/for-each.php">for-each (key and value arrays)</a></li>
@@ -77,6 +77,13 @@
     <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
     <li><a href="weeks/week4/celsius.php">celsius.php</a></li>
 	<li><a href="weeks/week4/adder.php" style="font-size:10px;">(...and the corrected adder page)</a></li>
+</ul>
+		<h3>Week 5</h3>
+<ul>
+	<li><a href="weeks/week5/currency1.php">Form 1</a></li>
+    <li><a href="weeks/week5/currency2.php">Form 2 (sticky form)</a></li>
+    <li><a href="weeks/week5/currency3.php">Form 3</a></li>
+
 </ul>
 </aside>
 

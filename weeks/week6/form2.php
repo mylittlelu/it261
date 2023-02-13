@@ -1,5 +1,18 @@
-<!-- remember, you cannot echo above the doctype -->
+<!-- note to self, you cannot echo above the doctype -->
 <?php
+
+ob_start(); // attempt at eliminating the header errors
+
+$first_name = '';
+$last_name = '';
+$email = '';
+$phone = '';
+$gender = '';
+$wines = '';
+$comments = '';
+$privacy = '';
+$regions = '';
+
 
 $first_name_err = '';
 $last_name_err = '';
@@ -10,6 +23,7 @@ $wines_err = '';
 $comments_err = '';
 $privacy_err = '';
 $regions_err = '';
+
 
 
 
@@ -70,31 +84,53 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $wines = $_POST['wines'];
   }
 
-  if(isset($POST['first_name'],
-  $POST['last_name'],
-  $POST['email'],
-  $post['phone'],
-  $POST['gender'],
-  $POST['wines'],
-  $POST['regions'],
-  $POST['comments'],
-  $POST['privacy']  )) {
+  // wines function
 
-$to = 'avanv@uw.edu';
+  function my_wines($wines) {
+  $my_return = '';
+  
+  if (!empty($_POST['wines'])) {
+  $my_return = implode(', ', $_POST['wines']);
+
+  } else {
+    $wines_err = 'Please pick your wines.';
+  }
+
+  return $my_return; //return must occur before the end of the function
+
+  } // end function
+
+  if(isset($_POST['first_name'],
+  $_POST['last_name'],
+  $_POST['email'],
+  $_POST['phone'],
+  $_POST['gender'],
+  $_POST['wines'],
+  $_POST['regions'],
+  $_POST['comments'],
+  $_POST['privacy']  )) {
+
+$to = 'atschider@gmail.com';
 $subject = 'Test email on ' .date('m/d/y, h i A');
 $body= '
-First name: '.$first_name.' '.PHP_EOL.'
-Last name: '.$last_name.' '.PHP_EOL.'
-Email: '.$email.' '.PHP_EOL.'
-Phone: '.$phone.' '.PHP_EOL.'
-Region: '.$region.' '.PHP_EOL.'
-Gender: '.$gender.' '.PHP_EOL.'
-Comments: '.$comments.' '.PHP_EOL.'
+First name : '.$first_name.' '.PHP_EOL.'
+Last name : '.$last_name.' '.PHP_EOL.'
+Email : '.$email.' '.PHP_EOL.'
+Phone : '.$phone.' '.PHP_EOL.'
+Gender : '.$gender.' '.PHP_EOL.'
+Region : '.$regions.' '.PHP_EOL.'
+Wines : '.my_wines($wines).'  '.PHP_EOL.'
+Comments : '.$comments.' '.PHP_EOL.'
 ';
 
-mail($to,$subject,$body);
-header('Location:thx.php');
+$headers = array(
+  'From' => 'noreply@mystudentswa.com'
+);
 
+if(!empty($first_name && $last_name && $email && $gender && $phone && $regions && $wines && $comments)) {
+ mail($to,$subject,$body, $headers);
+ header('Location:thx.php');  //I am aware of the error this line causes on my web server but not how to fix.
+}
   } // end isset
 
 

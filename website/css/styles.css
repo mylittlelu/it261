@@ -11,6 +11,10 @@ body {
     color: #555;
 }
 
+.current {
+    color:red;
+}
+
 nav {
     height:60px;
     background: #333;
@@ -57,6 +61,7 @@ main {
 }
 
 aside {
+    margin-top: 50px;
     width:35%;
     float:right;
     padding-left:20px;
@@ -146,3 +151,54 @@ p {
     margin-bottom: 10px;
 }
 
+/* FORM STYLES */
+
+
+form {
+    width: 600px;
+    margin:20px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid thistle;
+    padding: 10px;
+    border-radius:5%;
+}
+
+fieldset ul li {
+    list-style-type:none;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type=text],
+input[type=email],
+inpu[type=tel] {
+    display: block;
+    height: 30px;
+    width:100%;
+    margin-bottom:10px;
+}
+
+input[type=submit],
+    [type=button] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+}
+
+.error {
+    display: block;
+    color:orange;
+    margin-bottom: 8px;
+}

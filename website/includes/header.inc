@@ -1,61 +1,3 @@
-<?php
-define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
-
-switch(THIS_PAGE) {
-    case 'index.php' :
-        $title = 'Home of Website';
-        $body = 'home';
-        break;
-
-    case 'About.php' :
-        $title = 'About';
-        $body = 'about inner';
-        break;
-
-    case 'daily.php' :
-        $title = 'Daily';
-        $body = 'daily inner';
-        break;
-
-    case 'project.php' :
-        $title = 'Project';
-        $body = 'project inner';
-        break;
-
-    case 'contact.php' :
-        $title = 'Contact';
-        $body = 'contact inner';
-        break;
-
-    case 'gallery.php' :
-        $title = 'Gallery';
-        $body = 'gallery inner';
-        break;
-
-        
-}
-//  navigation array
-$nav = array(
- 'index.php' => 'Home',
- 'about.php' => 'About',
- 'daily.php' => 'Daily',
- 'project.php' => 'Project',
- 'contact.php' => 'Contact',
- 'gallery.php' => 'Gallery'
-  );
-
-// $nav = array(
-//    'gallery.php' => 'Gallery',
-//        'contact.php' => 'Contact',
-//            'project.php' => 'Project',
-//                'daily.php' => 'Daily',
-//                    'about.php' => 'About',
-//                        'index.php' => 'Home'
-// ); 
-
-?>
-
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,13 +29,7 @@ $nav = array(
 <nav>
 <ul>
 <?php
-  foreach($nav as $key => $value) {
-    if(THIS_PAGE == $key) {
-        echo '<li style="list-style-type:none"><a style="color:red;text-decoration:none;" href="'.$key.'">'.$value.' </a></li>';
-    } else {
-        echo '<li style="list-style-type:none"><a style="color:white; text-decoration:none;" href="'.$key.'">'.$value.' </a></li>';
-    }
-  } // end foreach
+ echo make_links($nav);
 
 
 ?>

@@ -92,6 +92,14 @@
     <li><a href="weeks/week6/functions.php">Functions</a></li>
 
 </ul>
+<h3>Week 7</h3>
+<ul>
+	<li><a href="weeks/week7/form3.php">Form 3 (with formatting check)</a></li>
+    <li><a href="weeks/week7/strings.php">Strings</a></li>
+    <li><a href="weeks/week7/pictures.php">Pictures</a></li>
+    <li><a href="weeks/week7/rand.php">rand() function</a></li>
+
+</ul>
 </aside>
 
 

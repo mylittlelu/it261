@@ -197,7 +197,7 @@ if(empty($_POST['phone'])) { // if empty, type in your number
   $_POST['comments'],
   $_POST['privacy']  )) {
 
-$to = 'oszemeo@mystudentswa.com';
+$to = 'szemeo@mystudentswa.com';
 $subject = 'Test email on ' .date('m/d/y, h i A');
 $body= '
 First name : '.$first_name.' '.PHP_EOL.'

@@ -87,8 +87,7 @@ if(empty($_POST['efficiency'])){
     echo '<p class="error">Please select your fuel efficiency.</p>';
 }
 
-
- if (isset($_POST['name'],
+if (isset($_POST['name'],
 $_POST['miles'],
 $_POST['speed'],
 $_POST['hours'],
@@ -101,7 +100,13 @@ $hours = floatval($_POST['hours']);
 $currency = floatval($_POST['currency']);
 $efficiency = floatval($_POST['efficiency']);
 $totalgallons = $miles/$efficiency;
+	 if($speed==0){
+		 $speed=1;
+	 }
 $totalhours = $miles / $speed;
+	 if($hours==0) {
+		 $hours=1;
+	 }
 $totaldays = ($miles/$speed)/$hours;	
 $totalcost = ($miles/$efficiency)*$currency;
 	 

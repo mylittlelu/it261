@@ -202,3 +202,12 @@ input[type=submit],
     color:orange;
     margin-bottom: 8px;
 }
+
+main table {
+    border:1px solid orange;
+    border-collapse:collapse;
+}
+td {
+    border:1px solid orange;
+    padding: 20px 20px;
+}

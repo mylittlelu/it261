@@ -6,7 +6,7 @@ include('server.php');
 ?>
 
 <h1>Register</h1>
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
 <fieldset>
 <label>First Name</label>
 <input type="text" name="first_name" value="<?php if(isset($POST['first_name'])) echo htmlspecialchars($_POST['first_name']) ;?>">

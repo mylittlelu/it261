@@ -20,7 +20,7 @@ switch(THIS_PAGE) {
         $body = 'daily inner';
         break;
 
-    case 'project.php' :
+    case 'pets.php' :
         $title = 'Project';
         $body = 'project inner';
         break;
@@ -42,7 +42,7 @@ $nav = array(
  'index.php' => 'Home',
  'about.php' => 'About',
  'daily.php' => 'Daily',
- 'project.php' => 'Project',
+ 'project/pets.php' => 'Project',
  'contact.php' => 'Contact',
  'gallery.php' => 'Gallery'
   );
@@ -196,8 +196,8 @@ if(empty($_POST['phone'])) { // if empty, type in your number
   $_POST['campus'],
   $_POST['comments'],
   $_POST['privacy']  )) {
-
-$to = 'szemeo@mystudentswa.com';
+$to = 'atschider@gmail.com';
+//$to = 'szemeo@mystudentswa.com';
 $subject = 'Test email on ' .date('m/d/y, h i A');
 $body= '
 First name : '.$first_name.' '.PHP_EOL.'

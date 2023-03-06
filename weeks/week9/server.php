@@ -7,6 +7,7 @@ include('config.php');
 
 // this server.php page will be comminicating to the database
 $iConn = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+$errors = []; //fix to errors/functionality
 
 
 // register user using if isset reg_user

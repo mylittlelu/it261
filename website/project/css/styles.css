@@ -37,6 +37,14 @@ main {
 
 }
 
+main ul li {
+	list-style-type:none;
+}
+
+main p a {
+	text-decoration:none;
+}
+
 aside {
     width:35%;
     float:right;
@@ -62,14 +70,17 @@ aside img {
 #wrapper {
     max-width: 1200px;
     margin:30px auto;
+    margin-bottom:30px;
 }
 
 #wrapper ul {
     list-style-type: none;
     line-height: 2;
     margin-left:20px;
+	list-style-type: none;
 }
 footer {
+    margin-top:30px;
     height: 60px;
     line-height: 60px;
     background: lightgray;
@@ -109,36 +120,51 @@ h2 {
     text-align: center;
     margin-bottom:20px;
 }
-
+main h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0;
+}
 main h2 {
     text-align:left;
 }
 
 main h2, aside h2 {
     text-align:left;
+    margin-top:20px;
 }
 
 main h3 {
-    margin-top:50px;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-top:10px;
+    margin-bottom: 5px;
     clear: both;
     overflow: hidden;
 }
-
+main p a {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-style: italic;
+    text-align: right;
+}
 aside h3 {
     padding-top: 20px;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 aside ul {
     padding-left: 10px;
     line-height: 20px;
     margin-bottom: 20px;
+	list-style-type: none;
 }
 
 aside ul a {
     text-decoration: none;
+}
+
+aside figcaption {
+    margin: 0 0 20px;
 }
 
 .resize {

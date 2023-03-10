@@ -57,6 +57,7 @@ main {
     float: left;
     margin-left:10px;
     padding: 0 15px;
+    margin-top:30px;
 
 }
 
@@ -81,6 +82,11 @@ aside {
 #wrapper {
     max-width: 1200px;
     margin:20px auto;
+    margin-bottom:30px;
+}
+
+figcaption {
+    margin-bottom:20px;
 }
 
 footer {
@@ -132,11 +138,15 @@ main h2, aside h2 {
 }
 
 main h3 {
-    margin-top:50px;
-    margin-bottom: 20px;
+    margin-top:20px;
+    margin-bottom: 5px;
     padding-top: 20px;
     clear: both;
     overflow: hidden;
+}
+
+main ul li {
+    line-height: 30px;
 }
 
 .resize {
@@ -149,6 +159,15 @@ main h3 {
 }
 p {
     margin-bottom: 10px;
+}
+
+p a {
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 /* FORM STYLES */
@@ -181,7 +200,7 @@ label {
 
 input[type=text],
 input[type=email],
-inpu[type=tel] {
+input[type=tel] {
     display: block;
     height: 30px;
     width:100%;
@@ -210,4 +229,8 @@ main table {
 td {
     border:1px solid orange;
     padding: 20px 20px;
+}
+
+ul li {
+    list-style-type: none;
 }

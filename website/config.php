@@ -24,7 +24,7 @@ switch(THIS_PAGE) {
         $title = 'Project';
         $body = 'project inner';
         break;
-
+		
     case 'contact.php' :
         $title = 'Contact';
         $body = 'contact inner';
@@ -42,7 +42,7 @@ $nav = array(
  'index.php' => 'Home',
  'about.php' => 'About',
  'daily.php' => 'Daily',
- 'project/pets.php' => 'Project',
+ 'pets.php' => 'Project',
  'contact.php' => 'Contact',
  'gallery.php' => 'Gallery'
   );

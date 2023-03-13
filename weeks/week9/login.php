@@ -1,11 +1,11 @@
 <?php
 // our login talks to server
 include('server.php');
-//include('./includes/header.php');
+include('./includes/header.php');
 
 ?>
-
-<h1>Login</h1>
+<div id="wrapper">
+<h1 class="center">Login</h1>
 <form action="<? echo htmlspecialchars($_SERVER['PHP_SELF'])  ;?>" method="post">
 <fieldset>
 <label>Username</label>
@@ -25,4 +25,9 @@ include('errors.php');
 </fieldset>
 
 </form>
-<p>Haven't registered? Please visit the <a href="register.php">Registration page</a>.</p>
+<p class="center">Haven't registered? Please visit the <a href="register.php">Registration</a> page.</p>
+
+</div> 
+<!-- end wrapper div -->
+
+<?php include('./includes/footer.php'); 

@@ -4,7 +4,7 @@
 session_start();
 include('config.php');
 
-// is the user logged in correctly? If not, they will receive a message and will be directed back to the login page.
+// is the user logged in correctly? If not, they will receive a message and be directed back to the login page.
 
 if(!isset($_SESSION['username'])) {
 $_SERVER['msg'] = 'You must login.';
@@ -17,10 +17,12 @@ if(isset($_GET['logout'])) {
   header('Location:login.php');
 }
 
-// include('./includes/header.php');
+include('./includes/header.php');
+?>
 
-// logic: is the session success set?
+<header>
 
+<?php
 if(isset($_SESSION['success'])) :?>
 <div class="success">
 <h3>
@@ -40,9 +42,11 @@ if(isset($_SESSION['username'])) :?>
 <!-- end close welcome logout div  -->
 <?php endif; ?>
 
+</header>
+
 <div id="wrapper">
 <h1>Welcome to the Home Page</h2>
 </div>
 <!-- end wrapper -->
-<?php 
-//include('./includes/footer.php');
+
+<?php include('./includes/footer.php');
